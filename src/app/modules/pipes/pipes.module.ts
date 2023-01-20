@@ -4,6 +4,8 @@ import { PurepipeComponent } from './components/purepipe/purepipe.component';
 import { ImpurepipeComponent } from './components/impurepipe/impurepipe.component';
 import { PipeshomeComponent } from './components/pipeshome/pipeshome.component';
 import { PipesRoutingModule } from './pipes-routing.module';
+import { FormsModule } from '@angular/forms';
+import { BytesToMB } from './pipes/bytestomb.pipe';
 
 
 
@@ -11,11 +13,13 @@ import { PipesRoutingModule } from './pipes-routing.module';
   declarations: [
     PurepipeComponent,
     ImpurepipeComponent,
-    PipeshomeComponent
+    PipeshomeComponent,
+    BytesToMB
   ],
   imports: [
     CommonModule,
-    PipesRoutingModule
+    PipesRoutingModule,
+    FormsModule
   ]
 })
 export class PipesModule { }

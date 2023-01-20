@@ -1,1 +1,6 @@
-<p>purepipe works!</p>
+<p>This is an example of pure pipe!</p>
+<div>
+    <p>Put the byte size in the input box to see corresponding megabytes</p>
+    <input type="text" [(ngModel)]="sizeInBytes"/>&nbsp;
+    <label>Equivelent megabytes <b>{{sizeInBytes | BytesToMB}}MB</b></label>
+</div>

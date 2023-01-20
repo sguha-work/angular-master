@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipeshome.component.scss']
 })
 export class PipeshomeComponent {
-
+  public date: Date;
+  constructor() {
+    this.date = new Date();
+  }
 }
