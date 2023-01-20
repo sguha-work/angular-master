@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CustomattributedirectiveComponent } from './components/customattributedirective/customattributedirective.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CustomattributedirectiveComponent
+  ],
   imports: [
     CommonModule
   ]
