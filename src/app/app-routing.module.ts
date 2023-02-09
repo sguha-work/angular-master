@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'directives',
     loadChildren:()=>import('./modules/directives/directives.module').then(module=>module.DirectivesModule)
+  },
+  {
+    path: 'ngrx',
+    loadChildren:()=>import('./modules/ngrx/ngrx.module').then(module=>module.NgrxModule)
   }
 ];
 
